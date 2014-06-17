@@ -60,6 +60,7 @@ java_ark "jdk" do
   retries node['java']['ark_retries']
   retry_delay node['java']['ark_retry_delay']
   action :install
+  owner "root"
 end
 
 if node['java']['set_default'] and platform_family?('debian')
