@@ -4,6 +4,8 @@ java
 This cookbook installs a Java JDK/JRE. It defaults to installing
 OpenJDK, but it can also install Oracle and IBM JDKs.
 
+This fork of the repo has tar options 'xvzfop' set in the ark provider so that the cookbook doesn't fail when run with vagrant-cachier and chef cache bucket enabled. You know, for speed!
+
 Usage
 -----
 
