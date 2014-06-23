@@ -54,6 +54,7 @@ java_ark "jdk" do
   url tarball_url
   default node['java']['set_default']
   checksum tarball_checksum
+  md5 tarball_checksum
   app_home java_home
   bin_cmds bin_cmds
   alternatives_priority 1062
